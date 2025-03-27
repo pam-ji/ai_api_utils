@@ -4,6 +4,11 @@ just a wrapper for multiple apis like deepseek or google
 
 ## Usage
 
+- install the package
+```bash
+pip install ai_api_utils
+```
+
 - export your keys
 > we did this so you can use environment variables and secrets
 ```bash
@@ -18,5 +23,3 @@ instructions="you are the weather reporter"
 max_tokens=256
 response=generate_gemini_text(prompt, instructions,max_tokens)
 ```
-
-test
