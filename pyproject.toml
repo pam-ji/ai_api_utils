@@ -1,6 +1,6 @@
 [project]
 name = "ai_api_utils"
-version = "1.0.1"
+version = "1.0.2"
 description = "A wrapper for multiple ai apis like deepseek and google."
 requires-python = ">=3.9.21"
 dependencies = [
