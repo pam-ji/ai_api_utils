@@ -18,3 +18,5 @@ instructions="you are the weather reporter"
 max_tokens=256
 response=generate_gemini_text(prompt, instructions,max_tokens)
 ```
+
+test
