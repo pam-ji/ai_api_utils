@@ -14,6 +14,7 @@ logger = logging.getLogger(__name__)
 try:
     GEMINI_API_KEY = os.environ["GEMINI_API_KEY"]
     gemini_client = genai.Client(api_key=GEMINI_API_KEY)
+    gemini_models=gemini_client.models.list()
 except KeyError as e:
  print("no gemini api key found")
  gemini_client=None
@@ -27,7 +28,7 @@ except KeyError as e:
  deep_client=None
 
 MAX_TOKENS = int(os.getenv("MAX_TOKENS", "256"))
-gemini_models=gemini_client.models.list()
+
 
 def generate_gemini_text(prompt, instructions,max_tokens=MAX_TOKENS):
     response = gemini_client.models.generate_content(
